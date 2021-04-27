@@ -1,0 +1,18 @@
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="center" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/" fx:controller="geekbrains.homework4.chat.Controller">
+    <TextArea fx:id="mainTextArea" editable="false" VBox.vgrow="ALWAYS" />
+    <HBox spacing="5.0">
+        <TextField fx:id="mainTextField" HBox.hgrow="ALWAYS" onAction="#sendMessage" />
+        <Button text="Отправить" HBox.hgrow="ALWAYS" onAction="#sendMessage" />
+        <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+        </padding>
+    </HBox>
+</VBox>
